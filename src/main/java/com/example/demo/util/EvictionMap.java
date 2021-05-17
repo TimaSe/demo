@@ -41,7 +41,7 @@ public class EvictionMap<K, V> extends ConcurrentHashMap<K, V> {
         public void run() {
             while (true) {
                 clean();
-                Thread.sleep(evictionMilli / 3);
+                Thread.sleep(evictionMilli / 4);
             }
         }
 
